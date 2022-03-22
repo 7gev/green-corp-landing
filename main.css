@@ -3,11 +3,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
   background: white;
   z-index: 1;
+  background: none;
+  left: 0;
+  right: 0;
+  transition: box-shadow, background-color .25s ease;
 }
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: #213053;
@@ -35,6 +44,10 @@ button {
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
 }
+.about {
+  padding-top: 200px;
+}
+
 .about__image {
   width: 500px;
 }
